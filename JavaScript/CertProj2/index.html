@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Drum Machine</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body><div id="root"></div>
+      <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+          <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script><script type="text/javascript" src="https://unpkg.com/babel-standalone@6/babel.js"></script>
+
+  <script type="text/babel">
+  let drumPads = [
+  {
+    id: "s1",
+    src: "https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3",
+    text: "Heater-1",
+    letter: "Q"
+          },
+{
+    id: "s2",
+    src: "https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3",
+    text: "Heater-2",
+    letter: "W"
+            },
+{
+    id: "s3",
+    src: "https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3",
+    text: "Heater-3",
+    letter: "E"
+             }, {                                 id: "s4",
+    src: "https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3",
+    text: "Heater-4",
+    letter: "A"
+  },
+  {
+    id: "s5",
+    src: "https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3",
+    text: "Clap",
+    letter: "S"
+    },
+  {
+    id: "s6",
+    src: "https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3",
+    text: "Open-HH",
+    letter: "D"
+    },
+  {
+    id: "s7",
+    src: "https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3",
+    text: "Kick-n'-Hat",
+    letter: "Z"
+  },
+  {
+    id: "s8",
+    src: "https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3",
+    text: "Kick",
+    letter: "X"
+                    },
+  {
+    id: "s9",
+    src: "https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3",
+    text: "Closed-HH",
+    letter: "C"}
+    ];
+  let bij={"Q":"Heater-1","W":"Heater-2","E":"Heater-3","A":"Heater-4","S":"Clap","D":"Open-HH","Z":"Kick-n'-Hat","X":"Kick","C":"Closed-HH"}
+  const Main=()=>{
+    function playDrums(pad){
+        let d=document.getElementById(pad);
+            d.play();
+        let disp=document.getElementById("display");
+        disp.innerText=bij[pad];
+              }
+    function playDrums2(pad){
+    let d=document.getElementById(pad);
+    d.play();
+    }
+window.document.onkeydown = function(event) {
+                        let keystroke = event.key;
+                                for(let i=0;i<9;i++){
+                                        if (keystroke.toUpperCase() === drumPads[i].letter) {
+                                                  playDrums2(drumPads[i].letter)}}}
+                              
+  let drums=drumPads.map((item)=><div className="drum-pad" key={item.id} id={item.id} txt={item.text} onClick={()=>playDrums(item.letter)}>{item.letter} <audio className="clip" id={item.letter} src={item.src}></audio></div>)
+  return (<div id="drum-machine"><div id="pad-bank">{drums}</div><p id="display"></p></div>)}  
+ReactDOM.createRoot(document.getElementById('root')).render(
+      <Main/>
+        );
+      </script>           
+  </body>
+</html>
