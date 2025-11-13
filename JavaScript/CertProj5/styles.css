@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: linear-gradient(
+    0deg,
+    rgb(255 254 224),
+    rgb(204 242 255) 20%,
+    rgb(87 213 255) 60%,
+    rgb(30 120 190)
+  );
+}
+
+.weather-container {
+  width: 60rem;
+  min-height: 25rem;
+
+  margin-top: 20vh;
+  margin-bottom: 4rem;
+
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0.75rem;
+  box-shadow: 1rem 1rem 1rem rgb(0 0 0 / 20%);
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 60rem;
+  height: 7.5rem;
+
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0.75rem;
+  box-shadow: 1rem 1rem 1rem rgb(0 0 0 / 20%);
+}
+
+.weather-text-span {
+  font-size: 2.25rem;
+  font-weight: 100;
+}
+
+.forecast-btn {
+  width: 12.5rem;
+  height: 3.5rem;
+  font-size: 1.75rem;
+
+  background: linear-gradient(
+    0deg,
+    rgb(255 254 224),
+    rgb(229 249 255) 25%,
+    rgb(204 242 255) 85%
+  );
+  /* background: linear-gradient(rgb(87 213 255), rgb(204 242 255)); */
+  border: 1px solid black;
+  border-radius: 0.75rem;
+}
+
+.forecast-btn:hover {
+  transform: scale(103%);
+}
+
+.forecast-btn:active {
+  transform: scale(97%);
+}
+
+.location-selector {
+  width: 12.5rem;
+  height: 3.5rem;
+
+  border: 1px, solid black;
+  border-radius: 0.75rem;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 100;
+}
+
+.weather-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+
+  /* border: 1px dashed black; */
+}
+
+.hidden {
+  display: none;
+}
+
+.main-weather-location {
+  font-size: 2.5rem;
+
+  margin-top: 2rem;
+  margin-bottom: 1.25rem;
+}
+.divider {
+  width: 50rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-top: 0.5px solid black;
+}
+
+.header {
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.main {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.main-container {
+  width: 80%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  /* border: 1px dashed black; */
+}
+
+.wind-container {
+  width: 80%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+
+  /* border: 1px dashed black; */
+}
+
+.wind-elements {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  row-gap: 1rem;
+}
+
+.direction-container {
+  width: 6rem;
+  height: 6rem;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.msg {
+  font-size: 2.5rem;
+  margin-top: 4rem;
+}
