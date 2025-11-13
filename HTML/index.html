@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robot" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Developer Survey</title>
+</head>
+<body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<h1 id="title">Developer Survey</h1>
+<p id="description">This survey is inspired by the annual developer survey on Stack Overflow</p>
+<form id="survey-form">
+<label for="name" id="name-label" class="block">Name<br>
+<input type="text" id="name" name="name" placeholder="Name" required></label>
+<label for="email" id="email-label" class="block">E-mail<br>
+<input type="email" id="email" name="email" placeholder="e-mail" required></label>
+<label for="number" id="number-label" class="block">Age<br>
+<input type="number" id="number" name="number" min="4" max="120" placeholder="Age">
+</label><hr>
+<fieldset>
+<label class="block">Gender</label>
+<label for="female">
+<input type="radio" class="inline" id="female" name="gender" value="female">Female</label>
+<label for="male">
+<input type="radio" class="inline" id="male" name="gender" value="male">Male</label>
+<label for="other">
+<input type="radio" class="inline" id="other" name="gender" value="other">Other</label>
+</fieldset><hr>
+<label for="dropdown" class="block">Country</label>
+<select name="country" id="dropdown">
+<option value="">(Select)</option>
+<option value="china">China</option>
+<option value="india">India</option>
+<option value="us">United States</option>
+<option value="canada">Canada</option>
+<option value="germany">Germany</option>
+<option value="uk">United Kingdom</option>
+<option value="france">France</option>
+<option value="italy">Italy</option>
+<option value="netherlands">Netherlands</option>
+<option value="brazil">Brazil</option>
+<option value="other">Other</option>
+</select><hr>
+<fieldset>
+<label class="block">Programming languages you are working with:</label>
+
+<label for="javascript">
+<input type="checkbox" class="inline" id="javascript" name="prog1" value="Javascript">JavaScript</label>
+<label for="typescript">
+<input type="checkbox" class="inline" id="typescript" name="prog1" value="Typescript">TypeScript</label>
+<label for="bash_shell">
+<input type="checkbox" class="inline" id="bash_shell" name="prog1" value="Bash/Shell"> Bash/Shell </label>
+<label for="python">
+<input type="checkbox" class="inline" id="python" name="prog1" value="Python"> Python </label>
+<label for="java">
+<input type="checkbox" class="inline" id="java" name="prog1" value="Java"> Java </label>
+<label for="sql">
+<input type="checkbox" class="inline" id="sql" name="prog1" value="SQL"> SQL </label>
+<label for="html_css">  
+<input type="checkbox" class="inline" id="html_css" name="prog1" value="HTML_CSS"> HTML/CSS </label>
+<label for="c">
+<input type="checkbox" class="inline" id="c" name="prog1" value="C"> C </label>
+<label for="cplus">
+<input type="checkbox" class="inline" id="cplus" name="prog1" value="Cplus"> C++ </label>
+<label for="csharp">
+<input type="checkbox" class="inline" id="csharp" name="prog1" value="Csharp"> C# </label>
+<label for="php">
+<input type="checkbox" class="inline" id="php" name="prog1" value="PHP">PHP</label>
+<label for="r">
+<input type="checkbox" class="inline" id="r" name="prog1" value="R"> R </label>
+<label for="sas">
+<input type="checkbox" class="inline" id="sas" name="prog1" value="SAS"> SAS </label>
+<label for="julia">
+<input type="checkbox" class="inline" id="julia" name="prog1" value="Julia">Julia</label>
+<label for="rust">
+<input type="checkbox" class="inline" id="rust" name="prog1" value="Rust">  Rust </label>
+<label for="kotlin">
+<input type="checkbox" class="inline" id="kotlin" name="prog1" value="Kotlin"> Kotlin </label>
+<label for="swift">
+<input type="checkbox" class="inline" id="swift" name="prog1" value="Swift"> Swift </label>
+<label for="other">
+<input type="checkbox" class="inline" id="other" name="prog1" value="Other"> Other </label>
+</fieldset><hr>
+<label for="dropdown2" class="block">Years of coding experience</label>
+<select name="country" id="dropdown2">
+<option value="">(Select)</option>
+<option value="less1">Less than 1 year</option>
+<option value="one_four">1 to 4 years</option>
+<option value="five_nine">5 to 9 years</option>
+<option value="ten_fourteen">10 to 14 years</option>
+<option value="fifteen_nineteen">15 to 19 years</option>
+<option value="twenty_twentyfour">20 to 24 years</option>
+<option value="twentyfive_nine">25 to 29 years</option>
+<option value="thirty_thirtyfour">30 to 34 years</option>
+<option value="thirtyfive_nine">35 to 39 years</option>
+<option value="forty_fifty">40 to 50 years</option>
+<option value="more50">More than 50 years</option>
+</select><hr>
+<fieldset>
+<label class="block">Learning how to code:</label>
+<label for="school">
+<input type="checkbox" class="inline" id="school" name="learn" value="School">School (i.e., University, College, etc)</label>
+<label for="books">
+<input type="checkbox" class="inline" id="books" name="learn" value="Books">Books / Physical media</label>
+<label for="online1">
+<input type="checkbox" class="inline" id="online1" name="learn" value="Online1">Online Courses or Certification</label>
+<label for="online2">
+<input type="checkbox" class="inline" id="online2" name="learn" value="Online2">Other online resources (e.g., videos, blogs, forum)</label>
+<label for="bootcamp">
+<input type="checkbox" class="inline" id="bootcamp" name="learn" value="Bootcamp">Coding Bootcamp</label>
+<label for="job">
+<input type="checkbox" class="inline" id="job" name="learn" value="Job">On the job training</label>
+<label for="other">
+<input type="checkbox" class="inline" id="other" name="learn" value="Other"> Other </label>
+</fieldset><hr>
+<!--<fieldset>
+<label class="block">Educational attainment</label>
+<label for="prime">
+<input type="checkbox" class="inline" id="prime" name="edu" value="Prime"> Primary/elementary school </label>
+<label for="sec">
+<input type="checkbox" class="inline" id="sec" name="edu" value="Sec"> Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) </label>
+<label for="some_col">
+<input type="checkbox" class="inline" id="some_col" name="edu" value="SomCol"> Some college/university study without earning a degree </label>
+<label for="assoc">
+<input type="checkbox" class="inline" id="assoc" name="edu" value="Assoc">  Associate degree (A.A., A.S., etc.) </label>
+<label for="bachelor">
+<input type="checkbox" class="inline" id="bachelor" name="edu" value="Bachelor"> Bachelor’s degree (B.A., B.S., B.Eng., etc.) </label>
+<label for="master">
+<input type="checkbox" class="inline" id="master" name="edu" value="Master"> Master’s degree (M.A., M.S., M.Eng., MBA, etc.) </label>
+<label for="professx">
+<input type="checkbox" class="inline" id="professx" name="edu" value="Professx"> Professional degree (JD, MD, etc.)  </label>
+<label for="othdoc">
+<input type="checkbox" class="inline" id="othdoc" name="edu" value="Othdoc"> Other doctoral degree (Ph.D., Ed.D., etc.) </label>
+<label for="other">
+<input type="checkbox" class="inline" id="other" name="edu" value="Other"> Other </label>
+</fieldset>--><hr>
+
+<textarea id="comments" rows="4" placeholder="Anything else??!"></textarea><br>
+<button id="submit" type="submit">Submit</button>
+</form>
+</body>
+  </html>
