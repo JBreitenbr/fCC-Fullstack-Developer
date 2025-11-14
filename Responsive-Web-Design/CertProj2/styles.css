@@ -1,0 +1,44 @@
+body {
+  background-color: cyan;
+}
+#playing-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: #fff;
+  width: 270px;
+  height: 370px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 3px 5px 0 black;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+.left {
+  display: flex;
+  align-self: flex-start;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 30px;
+}
+.middle {
+  display: flex;
+  flex-direction: column;
+  text-align:center;
+  align-self: center;
+  font-size: 50px;
+}
+.right {
+  display: flex;
+  align-self: flex-end;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
