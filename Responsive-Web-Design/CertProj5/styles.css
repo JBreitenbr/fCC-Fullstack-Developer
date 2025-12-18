@@ -1,0 +1,115 @@
+body {
+    box-sizing: border-box;
+    font-family: Merriweather, serif;
+    background-color: rgba(252, 214, 21,0.45);
+  }
+
+#header-img {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               margin: 80px auto 30px auto;
+            }
+
+h1, h2, h3 {
+      padding-top: 30px;
+      text-align: center;
+      display: inline-block;
+      color: rgb(101, 67, 33);
+      font-weight: 650;
+      margin: 20px;
+   }
+
+button, a { 
+         background-color: rgba(252,214,21,0.45);
+         color: rgb(101,67,33);
+       }
+a:visited { 
+color: rgb(101,67,33);
+   }
+
+#hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 300px;
+        background-color: rgba(229,178,86,0.7);
+       }
+
+#hero input[type='email'] {
+      padding: 5px;
+ }
+
+#hero input[type='submit'] {
+      margin: 15px 0;
+      background-color: rgba(252, 214, 21,0.45);
+      color: rgb(101, 67, 33);
+}
+
+.btn {
+       border: 2px solid rgb(101,67,33);
+}
+
+.gallery, .clip {
+           display: flex;
+           flex-direction: row;
+           flex-wrap: wrap;
+           justify-content: center;
+           align-items: center;
+           gap: 16px;
+         }
+
+.clip {
+        margin: 60px;
+     }
+
+.gallery img {
+               width: min(350px,100%);
+               max-width: 400px;
+               height: 300px;
+               margin: 30px 10px;
+               border-radius: 8px;
+               border: 3px solid rgb(101, 67, 33);
+              }
+
+ul {
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly;
+    background: rgba(229,178,86,0.7);
+    color: rgb(101, 67, 33);
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: block;
+    list-style-type: none;
+    border: 2px solid rgb(101,67,33);
+    border-radius: 3px;
+    color: rgb(101, 67, 33);
+}
+
+@media only screen and (max-width: 600px){
+#hero {
+          height: 240px;
+        }
+}
+
+
+p {
+    border: 3px solid rgb(101, 67, 33);
+    border-radius: 8px;
+    margin: 5%;
+    padding: 10px;
+    color: rgb(101,67,33);
+    background-color: rgba(229,178,86,0.45);
+   }
+
+#nav-bar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}​
