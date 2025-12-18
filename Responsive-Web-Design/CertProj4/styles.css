@@ -1,0 +1,150 @@
+html,
+body {
+  min-width: 290px;
+  color: #000052;
+  background-color: #f8f8f8;
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  height: 100vh;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 280px;
+  top: 0px;
+  left: 0px;
+  width: 310px;
+  height: 100%;
+  background-color: #ececff;
+  font-size: 16px;
+}
+
+header {
+  color: #000052;
+  margin: 20px 10px 10px 10px;
+  text-align: left;
+  font-size: 1.15em;
+  font-weight: 600;
+  padding: 10px 20px;
+}
+
+#main-doc header {
+  color: #000052;
+  text-align: left;
+  margin: 10px 0 20px 0;
+  padding: 0;
+}
+
+.cursive {
+  font-style: oblique;
+  #background-color: #e4e4e4;
+} 
+
+#navbar ul {
+  height: 90%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #000052;
+  cursor: pointer;
+}
+
+
+#main-doc {
+  margin-left: 310px;
+  padding: 40px;
+  margin-bottom: 50px;
+}
+
+section  {
+  font-size: 0.96em;
+  margin-bottom: 40px;
+}
+
+code {
+  display: block;
+  font-size: 0.8em;
+  text-align: left;
+  color: #192586;
+  background-color: #e4e4e4;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 5px;
+  overflow-y: auto;
+  overflow-x: auto; 
+}
+
+footer {
+         background-color: #a6a6a6;
+         color: #ffffff;
+         text-align: right;
+         padding-right: 36px;
+         display: inline-block;
+         width: 100vw;
+       }
+
+footer a {
+           text-decoration: none;
+           color: #ffffff;
+         }
+
+@media only screen and (max-width: 815px) {
+  
+  #navbar ul {
+    height: 205px;
+  }
+
+  #navbar {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    z-index: 1;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+
+  footer {
+           text-align: center;
+         }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -5px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+
+    footer {
+             text-align: center;
+           }
+} 
